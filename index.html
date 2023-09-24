@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Agrilink</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="./src/images/Agrilink_Icon.ico" type="image/x-icon">
+  </head>
+
+  <body>  
+    <div class="loading">
+      <div class="loading-container">
+        <img class="loading-logo" src="./src/images/Agrilink_Logo.png">
+      </div>
+    </div>
+
+    <div class="navbar-container">
+      <div class="navbar">
+        <div class="navbar-logo-container">
+          <a href="./index.html">
+            <div class="navbar-logo"></div>
+          </a>
+        </div>
+        <a class="navbar-dropdown-menu-toggle"><i class="fa fa-bars"></i></a>
+        <div class="navbar-menu">
+          <a href="./about.html">About</a>
+          <a href="./contact.html">Contact</a>
+          <a href=""><div class="user"><i class="fa fa-user-o"></i>User_Demo</div></a>
+          <a href=""><div class="Logout"><i class="fa fa-sign-out"></i></div></a>
+        </div>
+      </div>
+      <div class="navbar-dropdown hidden">
+        <div class="dropdown-menu">
+            <a href="./about.html">About</a>
+            <a href="./contact.html">Contact</a>
+            <a href=""><div class="user"><i class="fa fa-user-o"></i>User_Demo</div></a>
+            <a href=""><div class="Logout"><i class="fa fa-sign-out"></i>   Logout</div></a>
+        </div>
+      </div>
+    </div>
+    <div class="main">
+      <div class="header">
+        <div class="title-container">
+            <h1>Agrilink</h1>
+            <h3>Analyze soil conditions</h3>
+        </div>
+        <div class="automation-status">
+            <h4><i class="fa fa-microchip"></i>Automation Vehicle</h4>
+            Fetch data from automation vehicle
+            <div class="status">
+                Status
+                <div class="connection">Not Connected</div>
+            </div>
+            <div class="automation">
+                <a href="#"><div class="connect"><i class="fa fa-refresh"></i>Connect</div></a>
+                <a href="#"><div class="configure"><i class="fa fa-gear"></i>Configure</div></a>
+            </div>
+        </div>        
+    </div>
+    
+    <div class="application">
+        <div class="input_field">
+            <h3>Manual Inputs</h3>
+            <div class="input_N">
+                <div class="label">Nitrogen (N) amounts (%)</div>
+                <input type="text" id="N_input" class="input" placeholder="Input Nitrogen amounts" name="param_input">
+            </div>
+            
+            <div class="input_P">
+                <div class="label">Phosphate (P) amounts (%)</div>
+                <input type="text" id="P_input" class="input" placeholder="Input Phosphate amounts" name="param_input">
+            </div>
+            
+            <div class="input_K">
+                <div class="label">Potassium (K) amounts (%)</div>
+                <input type="text" id="K_input" class="input" placeholder="Input Potassium amounts" name="param_input">
+            </div>
+           
+            <div class="input_resist">
+                <div class="label">Resistivity (Ohm)</div>
+                <input type="text" id="resist_input" class="input" placeholder="Input resistivity" name="param_input">
+            </div>
+            
+            <div class="input_temp">
+                <div class="label">Temperature (C)</div>
+                <input type="text" id="temp_input" class="input" placeholder="Input temperature" name="param_input">
+            </div>
+            
+            <div class="input_hum">
+                <div class="label">Humidity (%)</div>
+                <input type="text" id="hum_input" class="input" placeholder="Input humidity" name="param_input">
+            </div>
+        </div>
+    </div>
+    <form action="./output.html">
+        <input type="submit" class="check" id="check_button" value="Check"></input>
+    </form>
+    </div>
+    <div class="spacer"></div>
+    <div class="footer">
+      <p class="tagline">Improving agriculture fertility with Agrilink technologies</p>
+      <div class="footer-logo">
+        <img class="Agrilink_Logo" alt="Ristek Logo Compact" src="./src/images/Agrilink_Logo.png">
+      </div>
+      <p class="copyright">&copy; 2023 Agrilink</p>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> 
+    <script src="./src/toggle-navbar-dropdown.js"></script>
+    <script src="./src/remove-loading.js"></script>
+    <script src="./src/calculate.js"></script>
+  </body>
+</html>

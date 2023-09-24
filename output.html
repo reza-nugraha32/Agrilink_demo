@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Agrilink</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="./src/images/Agrilink_Icon.ico" type="image/x-icon">
+  </head>
+
+  <body>  
+    <div class="loading">
+      <div class="loading-container">
+        <img class="loading-logo" src="./src/images/Agrilink_Logo.png">
+      </div>
+    </div>
+
+    <div class="navbar-container">
+      <div class="navbar">
+        <div class="navbar-logo-container">
+          <a href="./index.html">
+            <div class="navbar-logo"></div>
+          </a>
+        </div>
+        <a class="navbar-dropdown-menu-toggle"><i class="fa fa-bars"></i></a>
+        <div class="navbar-menu">
+          <a href="./about.html">About</a>
+          <a href="./contact.html">Contact</a>
+          <a href=""><div class="user"><i class="fa fa-user-o"></i>User_Demo</div></a>
+          <a href=""><div class="Logout"><i class="fa fa-sign-out"></i></div></a>
+        </div>
+      </div>
+      <div class="navbar-dropdown hidden">
+        <div class="dropdown-menu">
+            <a href="./about.html">About</a>
+            <a href="./contact.html">Contact</a>
+            <a href=""><div class="user"><i class="fa fa-user-o"></i>User_Demo</div></a>
+            <a href=""><div class="Logout"><i class="fa fa-sign-out"></i>   Logout</div></a>
+        </div>
+      </div>
+    </div>
+    <div class="main">
+      <div class="header">
+        <div class="title-container">
+            <h1>Agrilink</h1>
+            <h3>Analyze soil conditions</h3>
+        </div>
+    </div>
+    
+    <div class="application">
+        <h3>Recommendations</h3>
+        <div class="soil_health" id="soil_health">
+            Soil health:
+            <div id="soil_health_val"></div>
+        </div>
+        
+        <div class="urea_bulk" id="urea_bulk">
+            Urea Bulk: 
+            <div id="urea_bulk_val"></div>
+        </div>
+        
+        <div class="urea_mat" id="urea_mat">
+            Urea Mat: 
+            <div id="urea_mat_val"></div>
+        </div>
+
+        <div class="TSP_bulk" id="TSP_bulk">
+            TSP Bulk: 
+            <div id="TSP_bulk_val"></div>
+        </div>
+        
+        <div class="TSP_mat" id="TSP_mat">
+            TSP Mat: 
+            <div id="TSP_mat_val"></div>
+        </div>
+         
+        <div class="KCl_bulk" id="KCl_bulk">
+            KCl Bulk:
+            <div id="KCl_bulk_val"></div>
+        </div>
+        
+        <div class="KCl_mat" id="KCl_mat">
+            KCl Mat: 
+            <div id="KCl_mat_val"></div>
+        </div>
+    </div>
+    <a class="back" href="./index.html">
+        <div class="back"><i class="fa fa-chevron-left"></i>Back
+        </div>
+    </a>
+    </div>
+    <div class="spacer"></div>
+    <div class="footer">
+      <p class="tagline">Improving agriculture fertility with Agrilink technologies</p>
+      <div class="footer-logo">
+        <img class="Agrilink_Logo" alt="Ristek Logo Compact" src="./src/images/Agrilink_Logo.png">
+      </div>
+      <p class="copyright">&copy; 2023 Agrilink</p>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> 
+    <script src="./src/toggle-navbar-dropdown.js"></script>
+    <script src="./src/remove-loading.js"></script>
+    <script src="./src/get_value.js"></script>
+  </body>
+</html>
