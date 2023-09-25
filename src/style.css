@@ -25,6 +25,23 @@
     font-family: 'Plus Jakarta Sans', 'Helvetica Neue', Roboto, sans-serif;
     margin: 0;
    }
+   .empty-alert, .invalid-alert{
+    display: none;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 15px 15px 15px;
+    z-index: 99;
+    height: auto;
+    top: 70px;
+    left: 10px;
+    font-size: 1em;
+    border: solid;
+    border-radius: 10px;
+    border-width: 1px;
+    background-color: #ffffff;
+    color: #33751C;
+  }
    a{
     color: inherit;
     text-decoration: none;
@@ -118,7 +135,7 @@
    .navbar-menu{
     display: none;
    }
-   .fa.fa-user-o, .fa.fa-microchip, .fa.fa-gear, .fa.fa-refresh, .fa.fa-chevron-left{
+   .fa{
     margin-right: 10px;
    }
    .navbar-dropdown{
@@ -144,15 +161,19 @@
     padding: 70px 30px 20px 30px;
    }
    .header{
-    padding: 20px 0 20px 0;
+    padding: 10px 0 10px 0;
     display: grid;
    }
    .status{
     display: flex;
     margin: 5px 0 0 0;
    }
-   .connection{
+   .not_connected{
     color: red;
+    margin-left: 10px;
+   }
+   .connected{
+    color: #33751C;
     margin-left: 10px;
    }
    .automation{
@@ -160,8 +181,14 @@
     gap: 10px;
     margin: 15px 0 15px 0;
    }
-   .connect{
+   .disconnect{
     background-color: #33751C;
+    color: #ffffff;
+    border-radius: 20px;
+    padding: 10px 30px 10px 30px;
+   }
+   .connect{
+    background-color: red;
     color: #ffffff;
     border-radius: 20px;
     padding: 10px 30px 10px 30px;
@@ -197,9 +224,10 @@
     margin: 20px 0 20px 0;
     display: flex;
     gap: 10px;
+    align-items: center;
    }
    .back{
-    margin: 20px 0 20px 0;
+    margin: 40px 0 40px 0;
    }
    .spacer{
     padding: 1vw 0 0 0;
@@ -281,21 +309,11 @@
     margin: 10px 0 0 0;
     justify-content: space-between;
    }
-   .connection{
-    color: red;
-    margin-left: 10px;
-   }
    .automation{
     display: flex;
     gap: 10px;
     justify-content: space-between;
     margin: 15px 0 15px 0;
-   }
-   .connect{
-    background-color: #33751C;
-    color: #ffffff;
-    border-radius: 20px;
-    padding: 10px 20px 10px 20px;
    }
    .configure{
     background-color: #a5b1a0;

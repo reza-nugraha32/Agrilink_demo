@@ -30,16 +30,12 @@
         </div>
         <a class="navbar-dropdown-menu-toggle"><i class="fa fa-bars"></i></a>
         <div class="navbar-menu">
-          <a href="./about.html">About</a>
-          <a href="./contact.html">Contact</a>
           <a href=""><div class="user"><i class="fa fa-user-o"></i>User_Demo</div></a>
           <a href=""><div class="Logout"><i class="fa fa-sign-out"></i></div></a>
         </div>
       </div>
       <div class="navbar-dropdown hidden">
         <div class="dropdown-menu">
-            <a href="./about.html">About</a>
-            <a href="./contact.html">Contact</a>
             <a href=""><div class="user"><i class="fa fa-user-o"></i>User_Demo</div></a>
             <a href=""><div class="Logout"><i class="fa fa-sign-out"></i>   Logout</div></a>
         </div>
@@ -49,45 +45,54 @@
       <div class="header">
         <div class="title-container">
             <h1>Agrilink</h1>
-            <h3>Analyze soil conditions</h3>
+            <h3>Recommendations</h3>
         </div>
     </div>
     
     <div class="application">
-        <h3>Recommendations</h3>
         <div class="soil_health" id="soil_health">
-            Soil health:
+            <i class="fa fa-heart"></i>Soil health:
             <div id="soil_health_val"></div>
         </div>
-        
+        <div class="soil_recommendation"></div>
+
         <div class="urea_bulk" id="urea_bulk">
-            Urea Bulk: 
+            <i class="fa fa-flask"></i>Urea Bulk: 
             <div id="urea_bulk_val"></div>
         </div>
         
         <div class="urea_mat" id="urea_mat">
-            Urea Mat: 
+            <i class="fa fa-flask"></i>Urea Mat: 
             <div id="urea_mat_val"></div>
         </div>
-
+        <div id="urea_val">
+            This is the recommended dose of urea fertilizer.<br>
+        </div>
+        
         <div class="TSP_bulk" id="TSP_bulk">
-            TSP Bulk: 
+            <i class="fa fa-flask"></i>TSP Bulk: 
             <div id="TSP_bulk_val"></div>
         </div>
         
         <div class="TSP_mat" id="TSP_mat">
-            TSP Mat: 
+            <i class="fa fa-flask"></i>TSP Mat: 
             <div id="TSP_mat_val"></div>
         </div>
-         
+        <div id="urea_val">
+            This is the recommended dose of TSP fertilizer.<br>
+        </div>
+
         <div class="KCl_bulk" id="KCl_bulk">
-            KCl Bulk:
+            <i class="fa fa-flask"></i>KCl Bulk:
             <div id="KCl_bulk_val"></div>
         </div>
         
         <div class="KCl_mat" id="KCl_mat">
-            KCl Mat: 
+            <i class="fa fa-flask"></i>KCl Mat: 
             <div id="KCl_mat_val"></div>
+        </div>
+        <div id="urea_val">
+            This is the recommended dose of KCl fertilizer.<br>
         </div>
     </div>
     <a class="back" href="./index.html">

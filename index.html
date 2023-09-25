@@ -14,7 +14,19 @@
     <link rel="icon" href="./src/images/Agrilink_Icon.ico" type="image/x-icon">
   </head>
 
-  <body>  
+  <body>
+    <div class="empty-alert">
+        <div>
+          <i class="fa fa-info-circle"></i>
+          Empty Input!
+        </div>
+    </div>
+    <div class="invalid-alert">
+        <div>
+          <i class="fa fa-info-circle"></i>
+          Invalid Input!
+        </div>
+    </div>   
     <div class="loading">
       <div class="loading-container">
         <img class="loading-logo" src="./src/images/Agrilink_Logo.png">
@@ -30,16 +42,12 @@
         </div>
         <a class="navbar-dropdown-menu-toggle"><i class="fa fa-bars"></i></a>
         <div class="navbar-menu">
-          <a href="./about.html">About</a>
-          <a href="./contact.html">Contact</a>
           <a href=""><div class="user"><i class="fa fa-user-o"></i>User_Demo</div></a>
           <a href=""><div class="Logout"><i class="fa fa-sign-out"></i></div></a>
         </div>
       </div>
       <div class="navbar-dropdown hidden">
         <div class="dropdown-menu">
-            <a href="./about.html">About</a>
-            <a href="./contact.html">Contact</a>
             <a href=""><div class="user"><i class="fa fa-user-o"></i>User_Demo</div></a>
             <a href=""><div class="Logout"><i class="fa fa-sign-out"></i>   Logout</div></a>
         </div>
@@ -56,10 +64,10 @@
             Fetch data from automation vehicle
             <div class="status">
                 Status
-                <div class="connection">Not Connected</div>
+                <div class="not_connected" id="connection">Not Connected</div>
             </div>
             <div class="automation">
-                <a href="#"><div class="connect"><i class="fa fa-refresh"></i>Connect</div></a>
+                <a href="#"><div class="disconnect" id="status_check"><i class="fa fa-refresh"></i>Connect</div></a>
                 <a href="#"><div class="configure"><i class="fa fa-gear"></i>Configure</div></a>
             </div>
         </div>        
@@ -70,32 +78,32 @@
             <h3>Manual Inputs</h3>
             <div class="input_N">
                 <div class="label">Nitrogen (N) amounts (%)</div>
-                <input type="text" id="N_input" class="input" placeholder="Input Nitrogen amounts" name="param_input">
+                <input type="text" id="N_input" class="input" placeholder="Input Nitrogen amounts" name="param_input" required>
             </div>
             
             <div class="input_P">
                 <div class="label">Phosphate (P) amounts (%)</div>
-                <input type="text" id="P_input" class="input" placeholder="Input Phosphate amounts" name="param_input">
+                <input type="text" id="P_input" class="input" placeholder="Input Phosphate amounts" name="param_input" required>
             </div>
             
             <div class="input_K">
                 <div class="label">Potassium (K) amounts (%)</div>
-                <input type="text" id="K_input" class="input" placeholder="Input Potassium amounts" name="param_input">
+                <input type="text" id="K_input" class="input" placeholder="Input Potassium amounts" name="param_input" required>
             </div>
            
             <div class="input_resist">
                 <div class="label">Resistivity (Ohm)</div>
-                <input type="text" id="resist_input" class="input" placeholder="Input resistivity" name="param_input">
+                <input type="text" id="resist_input" class="input" placeholder="Input resistivity" name="param_input" required>
             </div>
             
             <div class="input_temp">
                 <div class="label">Temperature (C)</div>
-                <input type="text" id="temp_input" class="input" placeholder="Input temperature" name="param_input">
+                <input type="text" id="temp_input" class="input" placeholder="Input temperature" name="param_input" required>
             </div>
             
             <div class="input_hum">
                 <div class="label">Humidity (%)</div>
-                <input type="text" id="hum_input" class="input" placeholder="Input humidity" name="param_input">
+                <input type="text" id="hum_input" class="input" placeholder="Input humidity" name="param_input" required>
             </div>
         </div>
     </div>
@@ -115,5 +123,6 @@
     <script src="./src/toggle-navbar-dropdown.js"></script>
     <script src="./src/remove-loading.js"></script>
     <script src="./src/calculate.js"></script>
+    <script src="./src/connect.js"></script>
   </body>
 </html>
