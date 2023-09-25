@@ -1,5 +1,7 @@
 $(document).ready(function () {
-    if (sessionStorage.getItem("connected")) {
+
+    alert(sessionStorage.getItem("connected"))
+    if (sessionStorage.getItem("connected") == "true") {
         $("#status_check").attr("class", "connect")
         $("#connection").attr("class", "connected")
         $("#status_check").html("<i class='fa fa-times'></i>Disconnect")
@@ -36,13 +38,13 @@ $(document).ready(function () {
             $("#temp_input").val(36)
             $("#hum_input").val(78)
 
-            sessionStorage.setItem("connected", true)
+            sessionStorage.setItem("connected", "true")
         }
         else{   
             $("#status_check").html("<i class='fa fa-refresh'></i>Connect</div>")
             $("#connection").html("Not connected")
 
-            sessionStorage.setItem("connected", false)
+            sessionStorage.setItem("connected", "false")
         }
         $("#status_check").toggleClass("connect disconnect")
         $("#connection").toggleClass("connected not_connected")
