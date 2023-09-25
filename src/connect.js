@@ -1,6 +1,4 @@
 $(document).ready(function () {
-
-    alert(sessionStorage.getItem("connected"))
     if (sessionStorage.getItem("connected") == "true") {
         $("#status_check").attr("class", "connect")
         $("#connection").attr("class", "connected")
