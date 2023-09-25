@@ -8,6 +8,7 @@ $(document).ready(function () {
     console.log("N: "+N+", P: "+P+", K: "+K+", Resist: "+resist+", T: "+temp+", Hum: "+hum)
 
     var health = "Healthy"
+    
     if (N >= 60 && P >= 50 && K >= 67 && resist <= 100){
         health = "Healthy"
         $(".soil_recommendation").html("This soil is healthy and suitable for crops. A frequent care is recommended to improve the quality of this soil.")
