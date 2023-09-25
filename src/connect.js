@@ -5,12 +5,12 @@ $(document).ready(function () {
         $("#status_check").html("<i class='fa fa-times'></i>Disconnect")
         $("#connection").html("Device connected")
 
-        $("#N_input").val(56)
-        $("#P_input").val(67)
-        $("#K_input").val(676)
-        $("#resist_input").val(4554)
-        $("#temp_input").val(4545)
-        $("#hum_input").val(343)
+        $("#N_input").val(66)
+        $("#P_input").val(66)
+        $("#K_input").val(76)
+        $("#resist_input").val(20)
+        $("#temp_input").val(36)
+        $("#hum_input").val(78)
     }
     else{
         $("#status_check").attr("class", "disconnect")
